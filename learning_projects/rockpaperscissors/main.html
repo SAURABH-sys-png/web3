@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #3a3a5f);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        main {
+            margin-top: 50px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Game buttons */
+        button {
+            padding: 12px 25px;
+            margin: 10px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        /* Individual styles */
+        #rock {
+            background-color: #ff6b6b;
+        }
+
+        #paper {
+            background-color: #4ecdc4;
+        }
+
+        #scissors {
+            background-color: #ffe66d;
+            color: black;
+        }
+
+        /* Hover effect */
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Start button */
+        #startGame {
+            display: block;
+            margin: 30px auto;
+            background-color: #5f27cd;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Result box */
+        #result {
+            margin-top: 30px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 15px;
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Rock Paper Scissors Game!</h1>
+    </header>
+    <main>
+        <p>Click the button below to start playing.</p>
+        <button id="rock">Rock</button>
+        <button id="scissors">Scissors</button>
+        <button id="paper">Paper</button>
+
+        <button id="startGame" onclick="startgame()">Start Game</button>
+
+        <p id="result">Result to be displayed here</p>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
