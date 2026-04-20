@@ -1,0 +1,31 @@
+{
+  "name": "Jokechat",
+  "description": "Real-time chat with Stream Chat API",
+  "repository": "https://github.com/YOUR_USERNAME/jokechat",
+  "keywords": ["next.js", "chat", "stream-chat", "clerk", "real-time"],
+  "env": {
+    "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY": {
+      "description": "Clerk publishable key",
+      "required": true
+    },
+    "CLERK_SECRET_KEY": {
+      "description": "Clerk secret key",
+      "required": true,
+      "value": ""
+    },
+    "NEXT_PUBLIC_STREAM_API_KEY": {
+      "description": "Stream Chat API key",
+      "required": true
+    },
+    "STREAM_SECRET_KEY": {
+      "description": "Stream Chat secret key",
+      "required": true,
+      "value": ""
+    },
+    "STREAM_APP_ID": {
+      "description": "Stream Chat app ID",
+      "required": true
+    }
+  },
+  "buildCommand": "npm run build"
+}
