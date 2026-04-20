@@ -9,9 +9,8 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Features", href: "#features" },
-    { name: "Pricing", href: "#pricing" },
-    { name: "About", href: "#about" },
+    { name: "Chats", href: "/userchat" },
+    { name: "Contacts", href: "/contacts" },
   ];
 
   return (
@@ -38,9 +37,6 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <button className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition-all">
-              Join Now
-            </button>
             <UserButton/>
           </div>
 
@@ -79,10 +75,6 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
-          <button className="w-full bg-black text-white py-4 rounded-lg font-bold mt-4">
-            Join Now
-          </button>
-          
         </div>
       </div>
     </nav>

@@ -14,7 +14,7 @@ export default function HomePage() {
       {/* Main Content */}
       <main className="relative z-10 pt-32 pb-16 px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
-          
+
           {/* Badge */}
           <div className="flex justify-center mb-8">
             <span className="px-4 py-1.5 rounded-full text-sm font-medium bg-indigo-50 text-indigo-600 border border-indigo-100 animate-fade-in">
@@ -30,16 +30,16 @@ export default function HomePage() {
                 anywhere in real-time.
               </span>
             </h1>
-            
+
             <p className="max-w-2xl mx-auto text-lg md:text-xl text-gray-600 mb-10 leading-relaxed">
-              Experience the next generation of messaging. Secure, lightning-fast, 
+              Experience the next generation of messaging. Secure, lightning-fast,
               and designed to keep your conversations flowing effortlessly.
             </p>
 
             {/* Main Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
-                href="/chat"
+                href="/userchat"
                 className="w-full sm:w-auto px-10 py-4 bg-black text-white rounded-2xl font-bold text-lg hover:bg-gray-800 transition-all hover:scale-105 active:scale-95 shadow-xl shadow-gray-200 flex items-center justify-center gap-2"
               >
                 Start Chatting
@@ -56,10 +56,10 @@ export default function HomePage() {
           {/* Interactive Chat Mockup (The "Beautiful Design") */}
           <div className="mt-20 relative group max-w-4xl mx-auto">
             <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-[2.5rem] blur opacity-20 group-hover:opacity-30 transition duration-1000"></div>
-            
+
             {/* The "App UI" Mockup */}
             <div className="relative bg-white border border-gray-100 rounded-[2rem] shadow-2xl overflow-hidden grid grid-cols-12 min-h-[400px]">
-              
+
               {/* Sidebar Mockup */}
               <div className="hidden md:block col-span-4 border-r border-gray-50 bg-gray-50/50 p-4">
                 <div className="space-y-4">
@@ -92,7 +92,7 @@ export default function HomePage() {
                     Type a message...
                   </div>
                   <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
-                    <div className="w-4 h-4 bg-white rounded-sm rotate-45" style={{clipPath: 'polygon(0 0, 100% 0, 100% 100%)'}} />
+                    <div className="w-4 h-4 bg-white rounded-sm rotate-45" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%)' }} />
                   </div>
                 </div>
               </div>
