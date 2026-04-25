@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Robot(name) {
+        this.name = name;
+        this.energy = 100;
+      }
+      // This is the "Shared Manual" for all robots
+      Robot.prototype.charge = function () {
+        this.energy += 20;
+        console.log(`${this.name} is charging! New energy: ${this.energy}`);
+      };
+      const robo1 = new Robot("Bender");
+      const robo2 = new Robot("R2-D2");
+
+      // Both can use the charge method!
+      robo1.charge(); // "Bender is charging! New energy: 120"
+      robo2.charge(); // "R2-D2 is charging! New energy: 120"
+
+      console.log(Object.keys(Robot));
+    </script>
+  </body>
+</html>
